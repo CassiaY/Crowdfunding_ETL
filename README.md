@@ -4,9 +4,9 @@
 **Github link:** https://github.com/CassiaY/Crowdfunding_ETL</font>
 
 ## Tasks:
-Maidao: category df
-Raeshawn: subcategory df
-Sam: campaign df
-Cassia: contacts df
+Maidao: category df  
+Raeshawn: subcategory df  
+Sam: campaign df  
+Cassia: contacts df  
 
 Crowdfunding df, ERD, table schema: work on it together
