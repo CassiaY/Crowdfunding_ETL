@@ -10,13 +10,13 @@ DROP TABLE IF EXISTS contacts;
 -- Create table 1: category
 CREATE TABLE category (
   category_id VARCHAR(30) NOT NULL PRIMARY KEY,
-  category VARCHAR(30) NOT NULL,
+  category VARCHAR(30) NOT NULL
 );
 
 -- Create table 2: subcategory
 CREATE TABLE subcategory (
     subcategory_id VARCHAR(30) NOT NULL PRIMARY KEY,
-    subcategory VARCHAR(30) NOT NULL,
+    subcategory VARCHAR(30) NOT NULL
 );
 
 -- Create table 3: contacts
@@ -24,7 +24,7 @@ CREATE TABLE contacts (
     contact_id VARCHAR(30) NOT NULL PRIMARY KEY,
     first_name VARCHAR   NOT NULL,
     last_name VARCHAR   NOT NULL,
-    email VARCHAR   NOT NULL,
+    email VARCHAR   NOT NULL
 );
 
 -- Create table 4: campaign
@@ -45,7 +45,7 @@ CREATE TABLE campaign (
     subcategory_id VARCHAR   NOT NULL,
         FOREIGN KEY (contact_id) REFERENCES contacts(contact_id),
         FOREIGN KEY (category_id) REFERENCES category(category_id),
-        FOREIGN KEY (category_id) REFERENCES subcategory(category_id),
+        FOREIGN KEY (subcategory_id) REFERENCES subcategory(subcategory_id)
 );
 
 SELECT * FROM category;
